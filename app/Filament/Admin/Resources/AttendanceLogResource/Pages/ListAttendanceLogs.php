@@ -1,0 +1,21 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Filament\Admin\Resources\AttendanceLogResource\Pages;
+
+use App\Filament\Admin\Resources\AttendanceLogResource;
+use Filament\Actions\CreateAction;
+use Filament\Resources\Pages\ListRecords;
+
+class ListAttendanceLogs extends ListRecords
+{
+    protected static string $resource = AttendanceLogResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            CreateAction::make(),
+        ];
+    }
+}

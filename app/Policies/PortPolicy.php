@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Policies;
+
+use App\Models\Port;
+
+class PortPolicy extends GarmentPolicy
+{
+    protected function modelClass(): string
+    {
+        return Port::class;
+    }
+
+    protected function module(): string
+    {
+        return 'master';
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Padma Floor",
+  "short_name": "Floor",
+  "start_url": "/floor-pwa",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#16a34a"
+}

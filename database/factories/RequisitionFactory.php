@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Database\Factories;
+
+use App\Models\Requisition;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+/** @extends Factory<Requisition> */
+class RequisitionFactory extends Factory
+{
+    protected $model = Requisition::class;
+
+    public function definition(): array
+    {
+        return [
+            'public_id' => (string) Str::ulid(),
+            'name' => fake()->words(3, true),
+        ];
+    }
+}
